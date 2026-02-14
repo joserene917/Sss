@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mis friends</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Georgia',serif;
+    background: linear-gradient(135deg,#2c3e50,#4ca1af);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.95);
+    color:#2c3e50;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+    animation:fadeIn 2s ease;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.cita{
+    font-style:italic;
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+button{
+    background:#4ca1af;
+    border:none;
+    padding:15px 25px;
+    color:white;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    margin-top:25px;
+}
+
+#extra{
+    display:none;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:40px;
+    font-size:0.9rem;
+    opacity:.9;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2021/10/25/audio_2b6c3c6d3f.mp3?filename=soft-piano-ambient-110397.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>Para mis amigos</h1>
+
+    <div class="card">
+        <p>
+            En este tiempo quiero dar gracias a Dios por cada amistad verdadera.
+            Por los que han estado soportando lo payaso que soy, lo chismoso que soy, el mal ejemplo que soy
+            Gracias por aguantarme, aquí les dejo una frase que busque en internet :v
+        </p>
+
+        <p class="cita">
+            "Conoces gente que te olvida... pero a veces conoces a gente que no puedes olvidar.  
+            Esos son tus amigos." — Mark Twain
+        </p>
+
+        <button onclick="mostrar()">Un mensaje más</button>
+
+        <div id="extra">
+            Que Dios bendiga nuestras vidas y mantenga firmes nuestras amistades.  
+            Con aprecio sincero,  
+            — René
+        </div>
+    </div>
+
+    <footer>
+        Día del chisme y la Amistad
+    </footer>
+</div>
+
+<script>
+function mostrar(){
+    document.getElementById("extra").style.display="block";
+}
+</script>
+
+</body>
+</html>
